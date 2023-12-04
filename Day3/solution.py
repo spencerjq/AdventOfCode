@@ -1,10 +1,3 @@
-class partNumber:
-    num = 0 
-    first = 0
-    last = 0
-
-    
-
 with open("input.txt", newline='') as file:
     lines = file.readlines()
     total = 0
@@ -18,7 +11,7 @@ with open("input.txt", newline='') as file:
         line = lines[y].replace("\r\n", "")       
         xMax = len(line)
         x = 0
-        
+
         while x < xMax:
             if line[x].isdigit():
                 number = str(line[x])
